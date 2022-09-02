@@ -1,17 +1,17 @@
+// This guard prevent this file to be compiled in the old architecture.
+#ifdef RCT_NEW_ARCH_ENABLED
+#import <React/RCTViewComponentView.h>
 #import <UIKit/UIKit.h>
-#import "BlurEffectWithAmount.h"
 
-@interface BlurView : UIView
+#ifndef NativeComponentExampleComponentView_h
+#define NativeComponentExampleComponentView_h
 
-@property (nonatomic, copy, nullable) NSString *blurType;
-@property (nonatomic, copy, nullable) NSNumber *blurAmount;
-@property (nonatomic, copy, nullable) UIColor *reducedTransparencyFallbackColor;
+NS_ASSUME_NONNULL_BEGIN
 
-@property (nonatomic, strong, nullable) BlurEffectWithAmount *blurEffect;
-@property (nonatomic, strong, nullable) UIVisualEffectView *blurEffectView;
-@property (nonatomic, strong, nullable) UIView *reducedTransparencyFallbackView;
-
-- (void)updateBlurEffect;
-- (void)updateFallbackView;
-- (BOOL)useReduceTransparencyFallback;
+@interface BlurNativeView : RCTViewComponentView
 @end
+
+NS_ASSUME_NONNULL_END
+
+#endif /* NativeComponentExampleComponentView_h */
+#endif /* RCT_NEW_ARCH_ENABLED */

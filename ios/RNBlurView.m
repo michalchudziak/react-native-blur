@@ -1,11 +1,13 @@
-#import "BlurView.h"
+#import "RNBlurView.h"
 #import "BlurEffectWithAmount.h"
 
-@interface BlurView ()
+#
+
+@interface RNBlurView ()
 
 @end
 
-@implementation BlurView
+@implementation RNBlurView
 
 - (instancetype)init
 {
