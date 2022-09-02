@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BlurNativeView : RCTViewComponentView
+@interface BlurView : RCTViewComponentView
 @end
 
 NS_ASSUME_NONNULL_END

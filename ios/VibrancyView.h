@@ -1,4 +1,4 @@
-#import "BlurView.h"
+#import "RNBlurView.h"
 
-@interface VibrancyView : BlurView
+@interface VibrancyView : RNBlurView
 @end

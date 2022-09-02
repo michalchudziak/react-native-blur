@@ -124,6 +124,11 @@
       ]
     }
   },
+  "codegenConfig": {
+    "name": "BlurViewSpec",
+    "type": "components",
+    "jsSrcsDir": "src/components"
+  },
   "eslintIgnore": [
     "node_modules/",
     "lib/"

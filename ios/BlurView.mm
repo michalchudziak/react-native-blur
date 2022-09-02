@@ -1,6 +1,6 @@
 // This guard prevent the code from being compiled in the old architecture
 #ifdef RCT_NEW_ARCH_ENABLED
-#import "BlurNativeView.h"
+#import "BlurView.h"
 
 #import <react/renderer/components/BlurViewSpec/ComponentDescriptors.h>
 #import <react/renderer/components/BlurViewSpec/EventEmitters.h>
@@ -11,11 +11,11 @@
 
 using namespace facebook::react;
 
-@interface BlurNativeView () <RCTComponentViewProtocol>
+@interface BlurView () <RCTComponentViewProtocol>
 
 @end
 
-@implementation BlurNativeView {
+@implementation BlurView {
     UIView * _view;
 }
 
@@ -40,8 +40,8 @@ return self;
 
 - (void)updateProps:(Props::Shared const &)props oldProps:(Props::Shared const &)oldProps
 {
-    const auto &oldViewProps = *std::static_pointer_cast<ColoredViewProps const>(_props);
-    const auto &newViewProps = *std::static_pointer_cast<ColoredViewProps const>(props);
+//    const auto &oldViewProps = *std::static_pointer_cast<BlurViewProps const>(_props);
+//    const auto &newViewProps = *std::static_pointer_cast<BlurViewProps const>(props);
 
 //    if (oldViewProps.color != newViewProps.color) {
 //        NSString * colorToConvert = [[NSString alloc] initWithUTF8String: newViewProps.color.c_str()];
@@ -53,7 +53,7 @@ return self;
 
 Class<RCTComponentViewProtocol> BlurViewCls(void)
 {
-return BlurNativeView.class;
+return BlurView.class;
 }
 
 @end

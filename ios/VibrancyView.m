@@ -1,5 +1,5 @@
 #import <React/RCTComponent.h>
-#import "BlurView.h"
+#import "RNBlurView.h"
 #import "VibrancyView.h"
 
 @interface VibrancyView ()
